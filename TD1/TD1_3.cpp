@@ -3,18 +3,17 @@
 #include<stdio.h>
 #include <ctype.h>
 
+char lower() {
+	char c;
+	printf("Donnez un caractï¿½re majuscule :");
+	scanf("%c", &c);
+	printf("Le caractï¿½re en minuscule : %c\n\n", tolower(c));
+	return c;
+}
 
 int main()
 {
 	lower();
 	return EXIT_SUCCESS;
-}
-
-char lower() {
-	char c;
-	printf("Donnez un caractère majuscule :");
-	scanf("%c", &c);
-	printf("Le caractère en minuscule : %c\n\n", tolower(c));
-	return c;
 }
 
