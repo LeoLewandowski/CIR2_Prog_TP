@@ -8,12 +8,12 @@ public:
     // constuctors
     Point2D()
     {
-        std::random_device rd;                         // obtain a random number from hardware
-        std::mt19937 gen(rd());                        // seed the generator
-        std::uniform_int_distribution<> distr(25, 63); // define the range
-        x = gen();
-        y = gen();
-    } // fill X Y Z with random values (from 0 to 100)
+        std::random_device rd;                          // obtain a random number from hardware
+        std::mt19937 gen(rd());                         // seed the generator
+        std::uniform_int_distribution<> distr(-20, 20); // define the range
+        x = distr(gen);
+        y = distr(gen);
+    } // fill X Y Z with random values (from -20 to 20)
     Point2D(const float &newx, const float &newy)
     {
         x = newx;
@@ -61,10 +61,10 @@ public:
     {
         std::random_device rd;                         // obtain a random number from hardware
         std::mt19937 gen(rd());                        // seed the generator
-        std::uniform_int_distribution<> distr(25, 63); // define the range
-        x = gen();
-        y = gen();
-        z = gen();
+        std::uniform_int_distribution<> distr(-20, 20); // define the range
+        x = distr(gen);
+        y = distr(gen);
+        z = distr(gen);
     }
     Point3D(const float &newx, const float &newy, const float &newz) : Point2D(newx, newy)
     {

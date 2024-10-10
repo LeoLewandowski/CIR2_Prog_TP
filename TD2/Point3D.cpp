@@ -2,24 +2,22 @@
 #include "Point3D.hpp"
 #include <iostream>
 
-// fill X Y Z with random values (from 0 to 100)
+// fill X Y Z with random values (from -20 to 20)
 Point3D::Point3D()
 {
     std::random_device rd;                         // obtain a random number from hardware
     std::mt19937 gen(rd());                        // seed the generator
-    std::uniform_int_distribution<> distr(25, 63); // define the range
+    std::uniform_int_distribution<> distr(-20, 20); // define the range
 
-    x = gen();
-    y = gen();
-    z = gen();
+
+    x = distr(gen);
+    y = distr(gen);
+    z = distr(gen);
 }
 
 // fill XYZ values
-Point3D::Point3D(const float &newx, const float &newy, const float &newz)
+Point3D::Point3D(const float &newx, const float &newy, const float &newz) : x(newx), y(newy), z(newz)
 {
-    x = newx;
-    y = newy;
-    z = newz;
 }
 
 // Setters and getters

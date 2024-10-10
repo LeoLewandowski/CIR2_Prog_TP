@@ -24,6 +24,7 @@ int main()
         auto test = map<char, int>();
 
         char c, pc = 'a';
+        // Tant que l'on récupère des caractères depuis le buffer
         while (buffer.get(c))
         {
             specificLetterCount = 0;

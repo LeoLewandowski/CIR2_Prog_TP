@@ -5,7 +5,8 @@ using namespace std;
 
 int main(){
 
-    Point3D tab[] = {Point3D(1,0,4), Point3D(9,3,6), Point3D(2,7,3), Point3D(3,0,-4)};
+    // Generate 4 random points
+    Point3D tab[] = {Point3D(), Point3D(), Point3D(), Point3D()};
 
     Trajectory t(tab, 4);
 
@@ -15,7 +16,7 @@ int main(){
 
     t.print();
 
-    t.addPoint(Point3D(5,-7,-9));
+    t.addPoint(Point3D());
 
     t.print();
 

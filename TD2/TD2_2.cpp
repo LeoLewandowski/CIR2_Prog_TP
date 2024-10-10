@@ -1,11 +1,7 @@
 #include <iostream>
 #include <iomanip>
 
-using std::right;
-using std::left;
-using std::cout;
-using std::cin;
-using std::setw;
+using namespace std;
 
 // Table de multiplication entière, pour nombres de 1 à 10
 void whole_table()
