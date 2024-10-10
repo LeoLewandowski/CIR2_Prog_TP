@@ -1,5 +1,7 @@
 #include <iostream>
 
+#define multiplier(a,b) ((a) * (b))
+
 constexpr int multiplication(int x, int y){
     return x * y;
 }

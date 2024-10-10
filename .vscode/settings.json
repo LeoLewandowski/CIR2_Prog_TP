@@ -72,6 +72,13 @@
         "valarray": "cpp",
         "variant": "cpp",
         "__locale": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "bitset": "cpp",
+        "print": "cpp",
+        "__bit_reference": "cpp",
+        "__threading_support": "cpp",
+        "__verbose_abort": "cpp",
+        "locale": "cpp",
+        "__tree": "cpp"
     }
 }
