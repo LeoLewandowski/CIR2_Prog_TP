@@ -73,14 +73,14 @@ int main()
     A a2(a1);
     cout << endl;
     // Crée un élément A à partir d'un autre élément A. Equivaut à faire `A a3(a2);` : cf. ligne 16
-    A a3 = a2;
+    A a3 = a2; 
     cout << endl;
     // Copie les éléments de a1 dans a3. a1 est déjà créé, ainsi LE CODE N'APPELLE PAS DE CONSTRUCTEUR
     a3 = a1;
     cout << endl;
     cout << "-- B --\n";
     // Constructeur ligne 29
-    B b0(a0, 3);
+    B b0(a0, 3); 
     cout << endl;
     // Constructeur ligne 28
     B b1(a1);
