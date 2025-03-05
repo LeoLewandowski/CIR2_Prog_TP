@@ -1,0 +1,9 @@
+cmake_minimum_required (VERSION 3.9)
+
+project(CIR2_Prog_TP)
+
+if(NOT MSVC)
+    link_libraries(m) #to link with libm on Unix 
+endif()
+
+add_executable(Algo_2 "Algo_2.cpp")

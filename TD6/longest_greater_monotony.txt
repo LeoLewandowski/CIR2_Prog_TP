@@ -1,0 +1,16 @@
+procedure longest_greater_monotony is:
+    input: array R
+    output:
+        positive integer position,
+        positive integer size
+    
+    position = 1, size = 1, maximum_size = 0
+    
+    while position < length of R start:
+        if R[position] <= R[position + 1] start:
+            size = size + 1
+            if size > maximum_size: maximum_size = size
+        else if position < length of R - maximum_size:
+        position = position + 1
+        end;
+    end;
